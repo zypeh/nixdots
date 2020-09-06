@@ -8,6 +8,10 @@
             paths = [
                 bat
                 exa
+                fish
+            ];
+            packages = with pkgs; [
+                nixpkgs.emacsGcc
             ];
             pathsToLink = [ "/share" "/bin" ];
             extraOutputsToInstall = [ "man" "doc" ]; 
