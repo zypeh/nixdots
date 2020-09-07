@@ -7,3 +7,4 @@ nix-env -iA nixpkgs.zypehPkgs
 
 # Emacs
 nix-env -iA nixkpgs.emacsGcc
+ln -s doom-emacs-config ~/.doom.d
