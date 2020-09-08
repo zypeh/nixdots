@@ -69,9 +69,9 @@
     ;;;;; Font-lock stuff
     `(font-lock-builtin-face ((t (:foreground ,yellow-2 :background ,yellow-3bg))))
     `(font-lock-constant-face ((t (:foreground ,purple-1 :background ,purple-2bg))))
-    `(font-lock-comment-face ((t (:foreground ,gray-4 :background ,gray-4bg :italic t))))
-    `(font-lock-doc-face ((t (:foreground ,gray-3 :background ,gray-3bg))))
-    `(font-lock-doc-string-face ((t (:foreground ,gray-1 :background ,gray-1bg))))
+    `(font-lock-comment-face ((t (:foreground ,red-2 :italic t))))
+    `(font-lock-doc-face ((t (:foreground ,red-1 :background ,red-3bg))))
+    `(font-lock-doc-string-face ((t (:foreground ,red-1 :background ,red-3bg))))
     `(font-lock-function-name-face ((t (:foreground ,blue-2 :background ,blue-3bg :inherit bold))))
     `(font-lock-keyword-face ((t (:foreground ,orange-2 :background ,orange-3bg))))
     `(font-lock-negation-char-face ((t (:foreground ,yellow-3 :background ,yellow-4bg))))
@@ -79,7 +79,7 @@
     `(font-lock-string-face ((t (:foreground ,green-1 :background ,green-2bg))))
     `(font-lock-type-face ((t (:foreground ,grape-2 :background ,grape-3bg ))))
     `(font-lock-variable-name-face ((t (:foreground ,teal-1 :background ,teal-2bg))))
-    `(font-lock-warning-face ((t (:foreground ,red-1 :background ,red-2bg))))
+    `(font-lock-warning-face ((t (:foreground ,red-1 :background ,background))))
 
     ;;;;; UI related
     `(link ((t (:foreground ,blue-1 :background ,blue-1bg))))
@@ -103,7 +103,7 @@
     `(var ((t (:inherit font-lock-variable-name-face))))
     `(vertical-border ((t (:background ,background :foreground ,gray-5))))
     `(warning ((t (:foreground ,red-2))))
-
+   
     ;;;;; avy-mode
     `(avy-lead-face ((t (:inherit match))))
     `(avy-lead-face-0 ((t (:background ,purple-3 :foreground ,purple-3bg))))
@@ -461,13 +461,6 @@
     `(spaceline-evil-replace((t (:foreground ,red-1bg :background ,red-5))))
     `(spaceline-evil-visual((t (:foreground ,gray-1bg :background ,gray-5))))
 
-    ;; spacemacs
-    `(spacemacs-insert-face((t (:inherit spaceline-evil-insert))))
-    `(spacemacs-motion-face((t (:inherit spaceline-evil-motion))))
-    `(spacemacs-normal-face((t (:inherit spaceline-evil-normal))))
-    `(spacemacs-replace-face((t (:inherit spaceline-evil-replace))))
-    `(spacemacs-visual-face((t (:inherit spaceline-evil-visual))))
-
     ;;;;; whitespace-mode
     `(whitespace-empty ((t (:foreground ,yellow-1bg :background ,yellow-1))))
     `(whitespace-hspace ((t (:foreground ,gray-2))))
@@ -568,6 +561,9 @@
     `(web-mode-block-delimiter-face ((t (:inherit font-lock-preprocessor-face))))
     `(web-mode-error-face ((t (:background ,red-1bg))))
     `(web-mode-function-call-face ((t (:inherit font-lock-function-name-face))))
+
+    ;;;; Haskell mode
+    `(haskell-operator-face ((t (:foreground ,teal-1)))) ;; reducing the noise
    )
 
   (custom-theme-set-variables
