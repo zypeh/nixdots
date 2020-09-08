@@ -37,6 +37,9 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
+;; Set my splashscreen
+(setq fancy-splash-image (expand-file-name "misc/splash-images/Splendor_In_The_Grass.jpg" doom-private-dir))
+(setq +doom-dashboard-banner-padding '(1 . 4))
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
